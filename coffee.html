@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .main{
+        background-color: white;
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        padding: 20px;
+    }
+    .a{
+        text-align: left;
+        margin: 0 auto;
+
+    }
+    .ab{
+        width: 600px;
+    }
+    .b,.b-img{
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+    .b{
+        background-image: url(coffee.jpg);
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 150px;
+        right: 150px;
+        z-index: 3;
+    }
+    .b-img{
+        background-image: url(coffee2.jpg);
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: 250px;
+    }
+    .cc{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #ebd3bc;
+        border-radius: 20px;
+        padding: 30px 0;
+        position: absolute;
+        top: 400px;
+        left: 350px;
+        right: 350px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .c{
+        text-align: center;
+        margin: 0 40px;
+    }
+    .c h2{
+        font-size: 24px;
+        margin: 0;
+    }
+    .c p{
+        font-size: small;
+        margin: 5px 0 0;
+        color: #666;
+    }
+    .features{
+        background: rgb(27, 18, 18);
+        padding: 60px 20px;
+    }
+    .featuresss{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 30px;
+    }
+    .box{
+        color: white;
+        font-size: small;
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .box img{
+        max-width: 100%;
+        height: 250px;
+        gap: 30px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="a" style="margin-left: 100px;"><br><br><br><br>
+            <h1>Your coffee<br>Your vibe<br>Your energy</h1>
+            <div class="ab">
+             <p >A startup is a newly established company designed to grow rapidly by solving a problem or offering an innovative product or service,often using technologyA startup is a young company that is just beginning to develop,usually created to bring a unique product or service to market and scale it quickly.</p>
+           <input type="button"value="Explore" style="background-color: rgb(146, 57, 57);color: white;padding: 10px;border: none;border-radius: 20px;"><br><br><br><br><br><br>
+            </div>
+        </div>
+        <div class="b"></div>
+        <div class="b-img"></div>
+        <section class="cc">
+        <div class="c">
+            <img src="cup-of-drink.png" alt="icon"/>
+            <h2>190+</h2>
+            <p>Lorem ipsum dolor<br>sit amet,consectetur</p>
+        </div>
+        <div class="c">
+            <img src="cup-of-drink.png" alt="icon"/>
+            <h2>123k</h2>
+            <p>Lorem ipsum dolor<br>sit amet,consectetur</p>
+        </div>
+        <div class="c">
+            <img src="cup-of-drink.png" alt="icon"/>
+            <h2>58</h2>
+            <p>Lorem ipsum dolor<br>
+                sit amet,consectetur</p>
+        </div>
+        </section>
+        <div class="features">
+            <div class="container featuresss">
+                <div class="box">
+                    <img src="coffee4.jpg" alt="coffee4">
+                    <p><center>Et integer facilisi eget</center></p>
+                </div>
+                <div class="box">
+                    <img src="coffee6.jpg" alt="coffee6">
+                    <p><center>Et integer facilisi eget</center></p>
+                </div>
+                <div class="box">
+                    <img src="coffee1.jpg" alt="coffee1">
+                    <p><center>Et integer facilisi eget</center></p>
+                </div>
+                <div class="box">
+                    <img src="coffee5.jpg" alt="coffee5">
+                    <p><center>Et integer facilisi eget</center></p>
+                </div>
+                <div class="box">
+                    <img src="coffee3.jpg" alt="coffee3">
+                    <p><center>Et integer facilisi eget</center></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

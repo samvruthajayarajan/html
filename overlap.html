@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 700px;
+            width: 700px;
+            background-color: whitesmoke;
+            position: relative;
+        }
+        .a{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 400px;
+            left: 200px;
+            z-index: 1;
+        }
+        .b{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            z-index: 2;
+        }
+        .c{
+            height:200px;
+            width: 200px;
+            background-color: yellow;
+            position: absolute;
+            top: 480px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

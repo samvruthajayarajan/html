@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tutor spot</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background: #fff0e9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+.navbar nav {
+  display: inline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.navbar ul li{
+            display:inline;
+            margin-left: 25px;
+            font-weight: 500;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+.main {
+  background: url(res_img1.jpg) center/cover no-repeat;
+  color: white;
+  text-align: left;
+  padding: 100px 20px;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main button {
+  background-color: #f25f3a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.a{
+    width: 600px;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about img {
+  max-width: 30%;
+  border-radius: 10px;
+  flex: 1;
+}
+.b{
+    width: 700px;
+}
+.testimonial {
+  background: #d96330;
+  color: white;
+  text-align: center;
+  padding-bottom: 5rem;
+  padding: 5rem 2rem;
+  font-style: italic;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #f4f4f4;
+}
+
+.service-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #006064;
+  color: white;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact button {
+  background: #f25f3a;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #fff0e9;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 993px) {
+  .about {
+    flex-direction: column;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .about-text{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about img{
+    flex-direction: column;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 60px 15px;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-text,
+  .contact-info {
+    padding-right: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+    </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+       <span>The Tutor Spot</span><br>
+      <small>ONLINE TUTORING SERVICES</small>
+    </div>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        <li><img src="facebook-icon.png" alt="Facebook" width="20" style="color: #e74c3c;"/></li>
+        <li><img src="twitter-icon.png" alt="Twitter" width="20" style="color: #e74c3c;"/></li>
+        <li><img src="instagram-icon.jpg" alt="Instagram" width="20" style="color: #e74c3c;"/></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="main-content">
+      <h1>Toronto’s most trusted tutoring</h1>
+      <div class="a">
+      <p>A place where learners in Grades 1 through 7 can get help with their studies. Friendly staff and a comfortable atmosphere make learning easy.</p>
+      </div>
+      <button>Book your appointment</button>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>About us</h2>
+      <div class="b">
+      <p>Warm, caring and great at relating to kids, our tutors in Toronto know how to engage and motivate each child in a personal way—building confidence and smiles, as well as skills and better scores.</p><br>
+      <p>We offer in-depth, expert tutoring in math, humanities, and science. Our services currently span Grades 1 through 7.</p>
+      </div>
+      <button>Learn more</button>
+    </div>
+    <img src="tutor.avif" alt="Tutor image" />
+  </section>
+
+  <section class="testimonial">
+    <blockquote>
+      “The Tutor Spot in Toronto has been a great help to our family. Our son was struggling in school and they were able to help him catch up and even get ahead. The staff is caring and competent and we would recommend them to anyone.”
+      <footer>– Mathew F., Toronto</footer>
+    </blockquote>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <img src="online-tutoring.jpg" alt="Online tutoring" />
+      <h3>Online tutoring</h3>
+      <p>The best way to get learners ahead — right from home. Our online tutoring services cover all subjects, and are open to learners up to Grade 7.</p>
+      <button>Learn more</button>
+    </div>
+
+    <div class="service-card">
+      <img src="test-preperation.jpeg" alt="Test preparation" />
+      <h3>Test preparation</h3>
+      <p>Get real results from our tutoring experts. We pride ourselves on our ability to help learners reach new heights in testing and assessment.</p>
+      <button>Learn more</button>
+    </div>
+
+    <div class="service-card">
+      <img src="homework-support.jpg" alt="Homework support" />
+      <h3>Homework support</h3>
+      <p>Whether it's tackling a tough new subject or building good habits, we've helped hundreds of students with in-depth homework support.</p>
+      <button>Learn more</button>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Book a consultation with us</h2>
+      <p>Tell us about the right support for learners struggling, and we’ll provide a free assessment and personalized tutoring plan.</p>
+      <p>Find us at: 156 Main Street, Toronto, ON, M1P 4J7</p>
+      <p>Call us: 555-476-4329</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email address" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="logo">
+       <span>The Tutor Spot</span><br>
+      <small>ONLINE TUTORING SERVICES</small>
+    </div>
+    <div class="social">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook" width="20"/></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter" width="20"/></a>
+      <a href="#"><img src="instagram-icon.jpg" alt="Instagram" width="20"/></a>
+    </div>
+  </footer> 
+</body>
+</html>
