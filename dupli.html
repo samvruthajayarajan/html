@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }      
+        .main{
+            background-image: url(foodeyy.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+           }
+             .navbar{
+            text-align: right;
+            }
+            .btn{
+                margin-top: 10px;
+                margin-left: 10px;
+                padding: 10px 20px;
+                font-size: 14px;
+                background-color: orange;
+                color: white;
+            }
+            .navbar ul li{
+                display: inline;
+                margin-left: 20px;
+                margin-top:  20px;
+            }
+            img{
+                height: 200px;
+                position: relative;
+                top: 50px;
+                right: 250px;
+                border-radius: 50%;
+                animation-name: img;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes img{
+                0% {background-color: purple;left: 0px;top: 0px;}
+                25% {background-color: red;left: 200px;top: 0px;}
+                50% {background-color: orange;left: 200px;top: 200px;}
+                75% {background-color: yellowgreen;left: 0px;top: 200px;}
+                100% {background-color: yellow;left: 0px;top: 0px;}
+             }
+
+            .container{
+                display: flex;
+                height: 100vh;
+                color: aliceblue;   
+        }
+        .container .left{
+            flex: 1;
+        }
+        .container .right{
+            flex: 1; 
+            padding-left: 100px;
+            padding-top: 50px;       
+        }
+
+        .grillimg{
+            border-radius: 200px;
+            width: 500px;
+            /* transition: width 2s,height 2s,transform 2s; */
+        }
+        .grillimg:hover{
+            width: 300px;
+            height: 300px;
+            /* transform: rotate(180deg); */
+        }
+       
+        h1{
+        font-family: 'Baloo 2',cursive;
+        margin-top: 10px;
+        font-size: 50px;
+        margin-left: 30px;
+        }
+        p{
+            margin-left: 30px;
+        }
+    ul{
+        color: rgb(232, 231, 231);
+
+    }
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: row;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container .right {
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        .grillimg {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 10px 0;
+        }
+
+        .btn {
+            margin: 10px auto;
+            display: block;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+     <div class="navbar"><br>
+        
+        <ul>
+            <li style="color: orange;">HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>MENU</li>
+            <li>PAGES</li>
+            <li>CONTACT</li>
+            <input type="button" value="BOOK A TABLE" class="btn"> 
+        </ul>
+        </div>
+
+      <div class="container">
+        <div class="left">
+            <h3 style="color: orange; padding-left: 30px ;margin-top: -50px;font-weight: 700;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: xx-large;"><i class="fa-solid fa-utensils" style="color: #ffa500;"></i>Restoran</h3>
+            <br><br><br><br><br><br>
+            <h1>Enjoy Our <br>Delicious Meal</h1>
+            <p>"Restoran" is the word for restaurant in several languages, including Croatian, Serbian, Bosnian, and some Scandinavian languages.<br> It essentially means a place where people pay to sit and eat meals prepared and served on the premises.<br> The term "restaurant" itself originates from the French word "restaurer," meaning "to restore".<br> </p>
+            <input type="button" value="BOOK A TABLE" class="btn" style="margin-left: 30px;"> 
+        </div>
+       
+        <div class="right"><br><br>
+            <img src="fooddeyy.jpeg" class="grillimg";border-radius=50%/>
+        </div>
+         </div>
+        </div>
+</body>
+</html>

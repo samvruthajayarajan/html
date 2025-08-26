@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News paper</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    }
+
+    .main{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #a8a0a0;
+    border-bottom: 1px solid#5f5454;
+    }
+
+    header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px rgb(78, 64, 64);
+    }
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    font-size: 13px;
+    }
+
+    nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    }
+
+    .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    }
+
+    .box {
+    flex: 1;
+    margin: 10px;
+    min-width: 280px;
+    font-size: 14px;
+    /* gap: 50px;
+    padding: 10px;
+    column-count: 3; */
+    /* column-rule: 10x solid black; */
+    }
+
+    .box img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    }
+
+    footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Newspaper</h1>
+    </div>
+  <header>
+    <h1>Newspaper.</h1>
+    <nav>
+      <ul>
+        <li>Home page</li>
+        <li>Simple post</li>
+        <li>About us</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="box">
+      <h2>Fashion Category</h2>
+      <img src="./happy kid.webp" alt="Fashion Category">
+      <p>11 December 2021 - Some interesting inspirations and camera settings during the photo session. We create something better with every shot.</p>
+    </section>
+
+    <section class="box">
+      <h2>Modern Post</h2>
+      <img src="./kidsimg1.jpg" alt="Modern Post">
+    </section>
+
+    <section class="box">
+      <p><strong>11 December 2021</strong> - Newspaper creates with a hobby. We focus on the development of our articles to provide engaging content.</p>
+      <h3>Latest Trends</h3>
+      <p>In the world of fashion, staying on top of trends is crucial. Our latest trends section explores the styles that are making waves in the industry today.</p>
+      <h3>Fashion Bloggers</h3>
+      <p>Meet the individuals who are shaping the fashion world. Veronica Beroldi and Anita Rumio bring their unique perspectives to our publication.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Newspaper. © 2024</p>
+  </footer>
+</body>
+</html>
